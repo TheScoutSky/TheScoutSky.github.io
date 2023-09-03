@@ -1,0 +1,140 @@
+/* Importing Google font - Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: #1D1E23;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 80%;
+    width: 100vh;
+}
+
+.me {
+    font-size: 60px;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.writing-txt h1 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.writing-txt h1 span {
+    color: #ff9c00;
+    position: relative;
+
+}
+
+.writing-txt h1 span::before {
+    content: "";
+    height: 30px;
+    width: 2px;
+    position: absolute;
+    top: 50%;
+    right: -8px;
+    background: #ff9c00;;
+    transform: translateY(-45%);
+    animation: blink 0.7s infinite;
+}
+
+.writing-txt h1 span.stop-blinking::before {
+    animation: none;
+}
+
+@keyframes blink {
+    50% { opacity: 0 }
+}
+
+.taskbar {
+    padding-top: 50px;
+}
+
+.taskbar ul{
+    list-style: none;
+}
+
+.taskbar ul li {
+    display: inline-block;
+    margin-right: 30px;
+    transition: ease-in-out .5s;
+}
+
+.taskbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.taskbar ul li:hover{
+    transform: translateY(-5px);
+    transition: ease-in-out .5s;
+}
+
+.taskbar ul li:hover > a{
+    color: #ff9c00;
+    transition: .5s;
+}
+
+hr {
+    border: 1px solid #ff9c00;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.skills h1 {
+    color: #fff;
+    font-weight: 600;
+}
+
+.skills ul {
+    list-style: none;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.skills ul li {
+    display: inline-block;
+    margin-right: 30px;
+    transition: ease-in-out .5s;
+}
+
+.skills ul li img {
+    width: 100px;
+    height: 100px;
+}
+
+.sponsor {
+    padding-bottom: 40px;
+}
+
+.sponsor h2 {
+color: #fff;
+}
+
+.sponsor .wolkenlos {
+    margin-top: 10px;
+}
+
+.sponsor .logo {
+    width: 10%;
+    height: 10%;
+}

@@ -116,7 +116,9 @@ hr {
     height: 200px;
     background-color: #ffffff2a;
     margin-top: 20px;
+    display: inline-flex;
     transition: ease-in-out .5s;
+    width: 100%;
 }
 
 .projects ul a {
@@ -131,6 +133,10 @@ hr {
     padding: 0px;
     margin-left: 20px;
     width: 30%;
+}
+
+.projects .text {
+    padding-top: 20px;
 }
 
 .projects ul li h2 {
@@ -156,7 +162,6 @@ hr {
 .projects .one {
     background-repeat: no-repeat;
     background-size: 2000px;
-    background-position: 0px 0px;
     background-image: url(../img/wtab.png);
     
 }
@@ -164,9 +169,16 @@ hr {
 .projects .two {
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0px -250px;
     background-image: url(../img/bedwars.png);
     
+}
+
+.projects .logo {
+    display: block;
+    margin-left: 25px;
+    margin-top: 4%;
+    height: 60%;
+    border-radius: 10px;;
 }
 
 .sponsor {
