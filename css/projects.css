@@ -1,0 +1,187 @@
+/* Importing Google font - Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: #1D1E23;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 80%;
+    width: 100vh;
+}
+
+.me {
+    font-size: 60px;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.writing-txt h1 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.writing-txt h1 span {
+    color: #ff9c00;
+    position: relative;
+
+}
+
+.writing-txt h1 span::before {
+    content: "";
+    height: 30px;
+    width: 2px;
+    position: absolute;
+    top: 50%;
+    right: -8px;
+    background: #ff9c00;;
+    transform: translateY(-45%);
+    animation: blink 0.7s infinite;
+}
+
+.writing-txt h1 span.stop-blinking::before {
+    animation: none;
+}
+
+@keyframes blink {
+    50% { opacity: 0 }
+}
+
+.taskbar {
+    padding-top: 50px;
+}
+
+.taskbar ul{
+    list-style: none;
+}
+
+.taskbar ul li {
+    display: inline-block;
+    margin-right: 30px;
+    transition: ease-in-out .5s;
+}
+
+.taskbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.taskbar ul li:hover{
+    transform: translateY(-5px);
+    transition: ease-in-out .5s;
+}
+
+.taskbar ul li:hover > a{
+    color: #ff9c00;
+    transition: .5s;
+}
+
+hr {
+    border: 1px solid #ff9c00;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.projects h1 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.projects ul {
+    list-style: none;
+    display: inline;
+}
+
+.projects ul li {
+    border-radius: 20px;
+    height: 200px;
+    background-color: #ffffff2a;
+    margin-top: 20px;
+    transition: ease-in-out .5s;
+}
+
+.projects ul a {
+    text-decoration: none;
+    color: #fff;
+    transition: ease-in-out .5s;
+}
+
+.projects ul li hr {
+    border: 1px solid #fff;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 20px;
+    width: 30%;
+}
+
+.projects ul li h2 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 20px 20px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.projects ul li p {
+    color: white;
+    margin: 10px 20px;
+}
+
+.projects ul a:hover > li {
+    transform: translateY(-10px);
+    box-shadow: rgba(0, 0, 0, 0.562) 10px 10px 0px 0px;
+    transition: ease-in-out .5s;
+}
+
+.projects .one {
+    background-repeat: no-repeat;
+    background-size: 2000px;
+    background-position: 0px 0px;
+    background-image: url(../img/wtab.png);
+    
+}
+
+.projects .two {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -250px;
+    background-image: url(../img/bedwars.png);
+    
+}
+
+.sponsor {
+    padding-bottom: 40px;
+}
+
+.sponsor h2 {
+color: #fff;
+}
+
+.sponsor .wolkenlos {
+    margin-top: 10px;
+}
+
+.sponsor .logo {
+    width: 10%;
+    height: 10%;
+}
