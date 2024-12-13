@@ -1,0 +1,220 @@
+*{
+}
+
+body {
+    background-color: #2b2b2b;
+
+    background-image: url("./images/b2.png");
+    background-size: cover;
+    background-position: top;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+hr {
+    margin: 25px 0;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    color: white;
+    margin: 0 0 20px;
+}
+
+.head {
+    top: 10px;
+    position: sticky;
+    overflow: hidden;
+    #background-color: red;
+    display: flex;
+    width: auto;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+.head nav {
+    width: 100%;
+    background-color: #2b2b2b;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.head ul {
+    display: flex;
+    height: 100%;
+    width: auto;
+    #background-color: aqua;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.head ul li {
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.head ul li img {
+    #background-color: blueviolet;
+    height: 25px;
+    width: 25px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.head ul li img:nth-child(2) {
+    display: none;
+    opacity: 0;
+}
+
+.head ul li:hover img:nth-child(2) {
+    display: block;
+    opacity: 1;
+}
+
+.head ul li:hover img:nth-child(1) {
+    display: none;
+    opacity: 0;
+}
+
+.head ul li a {
+    display: flex;
+    align-items: center;
+    #background-color: bisque;
+    color: white;
+    text-decoration: none;
+}
+
+
+.head ul li:hover a {
+    color: #C62368;
+}
+
+.head ul li:hover {
+    transform: scale(1.1);
+}
+
+.head ul li a:active {
+    color: #C62368;
+}
+
+.head ul li a:active img:nth-child(1) {
+    display: block;
+    opacity: 1;
+}
+
+
+.head img {
+    #background-color: blueviolet;
+    height: 50px;
+    width: 50px;
+}
+
+.content {
+    padding: 25px;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    #background-color: red;
+}
+
+.introduction h1 {
+    #background-color: blue;
+    font-size: 30px;
+    margin: 0 0 25px;
+}
+
+.introduction p {
+    #background-color: green;
+    font-size: 18px;
+    margin: 0 0 25px;
+}
+
+.introduction a {
+    #background-color: yellow;
+    color: white;
+    font-size: 16px;
+
+}
+.name {
+    color: rgba(255, 255, 255, 0.1);
+    background: linear-gradient(90deg, #C62368, #FA7268, #C62368);
+    background-clip: text;
+    --webkit-background-clip: text;
+    animation: gradient 10s linear infinite;
+
+}
+
+@keyframes gradient {
+    0%, 100% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 10em 0;
+    }
+}
+
+.project ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.project ul li {
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+    width: 25%;
+    background-color: #2b2b2b;
+    background-image: url("./images/test.png");
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
+    padding: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+    transition: 0.3s;
+
+}
+.project ul li h3 {
+    width: max-content;
+    color: white;
+    font-size: 20px;
+    backdrop-filter: blur(5px);
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+    margin: 0 0 80px;
+}
+
+.project ul li p {
+    color: white;
+    font-size: 16px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.project ul li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+.project ul li:hover h3, .project ul li:hover p {
+    opacity: 1;
+}
