@@ -29,26 +29,27 @@ hr {
 
 .head {
     top: 10px;
-    position: sticky;
-    overflow: hidden;
+    position: fixed;
     z-index: 10;
     display: flex;
-    width: auto;
+    width: 100%;
     padding: 10px;
     font-size: 18px;
     font-weight: bold;
     color: var(--text);
 }
-.head nav {
+.navbar {
     display: flex;
-    width: 100%;
+    width: auto;
+    max-height: 25px;
     background-color: var(--content);
     margin-right: 15px;
     padding: 15px;
     border-radius: 10px;
+    flex-grow: 1;
 }
 
-.head ul {
+.navbar ul {
     display: flex;
     height: 100%;
     width: auto;
@@ -70,6 +71,7 @@ hr {
     vertical-align: middle;
     margin-right: 5px;
 }
+
 
 .head ul li img:nth-child(2) {
     display: none;
@@ -129,7 +131,8 @@ hr {
 }
 
 .mainLogo {
-    display: flex;
+    display: block;
+    margin: 0 25px 0 0px;
 }
 
 .head-icon{
@@ -153,12 +156,45 @@ hr {
 
 }
 
+.navbar-media {
+    background-color: var(--content);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    padding: 25px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.navbar-media ul {
+    display: table;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 60px;
+}
+
+.navbar-media ul li {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-media ul li a {
+    font-size: 20px;
+}
+
+.navbar-media ul li img {
+    height: 25px;
+    width: 25px;
+}
+
 @media (max-width: 650px) {
-    .head nav {
+    .navbar {
         padding: 10px
     }
 
-    .head ul {
+    .navbar ul {
         display: none;
     }
 
@@ -166,7 +202,7 @@ hr {
         display: flex;
     }
 
-    .head h1 {
+    .navbar h1 {
         display: flex;
     }
 
@@ -180,6 +216,7 @@ hr {
 }
 
 .content {
+    margin-top: 80px;
     padding: 25px;
 }
 
